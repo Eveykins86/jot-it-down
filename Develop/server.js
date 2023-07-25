@@ -6,7 +6,10 @@ const api = require('./routes/notes');
 
 //Create Express application
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Application successfully listening on http://localhost:${PORT}`);
+});
 
 //Middleware setup
 app.use(express.urlencoded({ extended: true}));
