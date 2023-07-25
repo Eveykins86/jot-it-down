@@ -1,8 +1,8 @@
 //Import required modules
 const express = require('express');
 const path = require('path');
-const notesRouter = require('../Develop/routes/notes');
-const api = require('./routes/notes');
+const notesRouter = require('./Develop/routes/notes');
+const api = require('./Develop/routes/notes');
 
 //Create Express application
 const app = express();
